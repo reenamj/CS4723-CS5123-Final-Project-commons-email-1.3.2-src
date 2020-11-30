@@ -5,14 +5,12 @@ pipeline{
     stage("build"){
       steps{
         mvn -B -DskipTests clean package
-        echo 'Build stage - mye631'
       }
     }
     
     stage("test"){
       steps{
         mvn test
-        echo 'Test stage - mye631'
       }
     }
     
