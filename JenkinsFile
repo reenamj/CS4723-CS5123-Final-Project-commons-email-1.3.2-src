@@ -4,19 +4,21 @@ pipeline{
   stages{
     stage("build"){
       steps{
-        echo 'building - mye631'
+        mvn -B -DskipTests clean package
+        echo 'Build stage - mye631'
       }
     }
     
     stage("test"){
       steps{
-        echo 'testing - mye631'
+        mvn test
+        echo 'Test stage - mye631'
       }
     }
     
     stage("deploy"){
       steps{
-        echo 'delivering - mye631'
+        echo 'Deliver stage - mye631'
       }
     }
   }
