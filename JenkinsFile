@@ -16,7 +16,7 @@ pipeline{
     
     stage("deploy"){
       steps{
-        echo 'Deliver stage - mye631'
+        echo 'delivering - mye631'
       }
     }
   }
