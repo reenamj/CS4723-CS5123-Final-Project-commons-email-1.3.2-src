@@ -4,19 +4,19 @@ pipeline{
   stages{
     stage("build"){
       steps{
-        echo 'building'
+        echo 'building - mye631'
       }
     }
     
     stage("test"){
       steps{
-        echo 'testing'
+        echo 'testing - mye631'
       }
     }
     
     stage("deploy"){
       steps{
-        echo 'delivering'
+        echo 'delivering - mye631'
       }
     }
   }
